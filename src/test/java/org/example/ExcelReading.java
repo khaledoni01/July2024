@@ -14,7 +14,7 @@ public class ExcelReading {
         try {
             FileInputStream fis = new FileInputStream("src/test/resources/testing.xlsx");
             XSSFWorkbook wb = new XSSFWorkbook(fis);
-            XSSFSheet sheet = wb.getSheet("Sheet1");
+            XSSFSheet sheet = wb.getSheet("Sheet2");
 
             for(int r=0; r<=sheet.getLastRowNum(); r++) {
 
