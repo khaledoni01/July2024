@@ -1,4 +1,4 @@
-package org.example;
+package example;
 
 public class Day2 {
 //    1. Write a program which prints all different kinds of dataTypes in separate

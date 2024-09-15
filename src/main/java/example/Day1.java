@@ -1,4 +1,4 @@
-package org.example;
+package example;
 
 //1. Write a program which prints “Java is running in my machine” in the
 //        console. Use comments appropriately to explain your code.

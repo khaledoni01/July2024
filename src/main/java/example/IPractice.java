@@ -1,4 +1,4 @@
-package org.example;
+package example;
 
 public interface IPractice {
     public void sound();

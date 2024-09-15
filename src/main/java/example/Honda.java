@@ -1,4 +1,4 @@
-package org.example;
+package example;
 
 // Child  -  Sub
 public class Honda implements IPractice{

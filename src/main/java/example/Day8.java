@@ -1,6 +1,4 @@
-package org.example;
-
-import java.util.Arrays;
+package example;
 
 public class Day8 {
 //    Write a method which takes an array of int

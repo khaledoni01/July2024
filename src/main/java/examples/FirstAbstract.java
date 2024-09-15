@@ -1,6 +1,6 @@
 package examples;
 
-import org.example.Day11;
+import example.Day11;
 
 public abstract class FirstAbstract {
 
