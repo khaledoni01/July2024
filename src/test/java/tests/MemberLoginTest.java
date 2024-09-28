@@ -8,12 +8,12 @@ public class MemberLoginTest extends TestBase {
 
     @Test
     public void invalid_Username_And_Password_Test() {
-        MemberLoginPage mlp = new MemberLoginPage();
-        mlp.provideUsername();
-        mlp.providePassword();
-        mlp.clickLoginBtn();
+        MemberLoginPage memberLoginPage = new MemberLoginPage();
+        memberLoginPage.provideUsername();
+        memberLoginPage.providePassword();
+        memberLoginPage.clickLoginBtn();
 
-        Assert.assertTrue(mlp.verifyErrorMsg(), "Error msg is not displayed");
+        Assert.assertTrue(memberLoginPage.verifyErrorMsg(), "Error msg is not displayed");
     }
 
 }
