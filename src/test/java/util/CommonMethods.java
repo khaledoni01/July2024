@@ -17,4 +17,8 @@ public class CommonMethods {
         WebDriverWait wait = new WebDriverWait(TestBase.driver, 5);
         wait.until(ExpectedConditions.elementToBeClickable(ele));
     }
+    public static void checkIfElementIsVisible(WebElement ele) {
+        WebDriverWait wait = new WebDriverWait(TestBase.driver, 5);
+        wait.until(ExpectedConditions.visibilityOf(ele));
+    }
 }

@@ -6,8 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import tests.MemberLoginTest;
 import tests.TestBase;
+import util.CommonMethods;
 
 public class MemberLoginPage {
+    public MemberLoginPage() {
+        PageFactory.initElements(TestBase.driver, this);
+    }
 
     @FindBy(xpath = "//input[@id='swpm_user_name']")
     WebElement username;
@@ -18,11 +22,8 @@ public class MemberLoginPage {
     @FindBy(xpath = "//span[text()='No user found with that username or email.']")
     WebElement errorMsg;
 
-    public MemberLoginPage() {
-        PageFactory.initElements(TestBase.driver, this);
-    }
-
     public void provideUsername() {
+        CommonMethods.checkIfElementIsVisible(username);
         username.sendKeys("abc123");
     }
     public void providePassword() {

@@ -7,10 +7,16 @@ import pages.MemberLoginPage;
 
 public class HomeTest extends TestBase {
 
-    @Test
-    public void chooseMenuOptions() {
+    @Test(priority = 0)
+    public void chooseMenuOptionsTraining() {
         HomePage homePage = new HomePage();
         homePage.clickMenuOptions("Training");
+    }
+
+    @Test(priority = 1)
+    public void chooseMenuOptionsMemberLogin() {
+        HomePage homePage = new HomePage();
+        homePage.clickMenuOptions("Member Login");
     }
 
 }
