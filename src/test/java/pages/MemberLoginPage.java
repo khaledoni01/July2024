@@ -22,12 +22,12 @@ public class MemberLoginPage {
     @FindBy(xpath = "//span[text()='No user found with that username or email.']")
     WebElement errorMsg;
 
-    public void provideUsername() {
+    public void provideUsername(String uname) {
         CommonMethods.checkIfElementIsVisible(username);
-        username.sendKeys("abc123");
+        username.sendKeys(uname);
     }
-    public void providePassword() {
-        password.sendKeys("pass");
+    public void providePassword(String pass) {
+        password.sendKeys(pass);
     }
     public void clickLoginBtn(){
         loginButton.click();

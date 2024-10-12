@@ -3,14 +3,18 @@
 
 <suite name="Suite">
 
+    <groups>
+        <run>
+            <include name="smoke" />
+        </run>
+    </groups>
+
+    <parameter name="baseURL" value="https://nktechsolutions.com/membership-login/" />
+
     <test name="Test 1">
 
         <classes>
-            <class name="tests.HomeTest">
-                <methods>
-                    <include name="chooseMenuOptionsMemberLogin" />
-                </methods>
-            </class>
+            <class name="tests.MemberLoginTest" />
         </classes>
 
     </test>

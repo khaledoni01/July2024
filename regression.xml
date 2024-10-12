@@ -3,6 +3,12 @@
 
 <suite name="Suite">
 
+    <groups>
+        <run>
+            <include name="regression" />
+        </run>
+    </groups>
+
     <test name="Test 1">
 
         <classes>
