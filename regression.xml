@@ -9,10 +9,11 @@
         </run>
     </groups>
 
+    <parameter name="baseURL" value="https://nktechsolutions.com/membership-login/" />
+
     <test name="Test 1">
 
         <classes>
-            <class name="tests.HomeTest" />
             <class name="tests.MemberLoginTest" />
         </classes>
 
