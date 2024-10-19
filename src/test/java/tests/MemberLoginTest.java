@@ -34,7 +34,7 @@ public class MemberLoginTest extends TestBase {
         memberLoginPage.provideUsername("username");
     }
 
-    @Test(enabled = false, groups = {"smoke"})
+    @Test(enabled = true, groups = {"smoke"})
     public void invalid_Password_Test() {
         MemberLoginPage memberLoginPage = new MemberLoginPage();
         memberLoginPage.providePassword("password");
