@@ -4,7 +4,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import tests.TestBase;
+import stepDef.TestBase;
+
+import java.time.Duration;
 
 public class CommonMethods {
 
@@ -14,11 +16,11 @@ public class CommonMethods {
     }
 
     public static void checkIfElementIsClickable(WebElement ele) {
-        WebDriverWait wait = new WebDriverWait(TestBase.driver, 5);
+        WebDriverWait wait = new WebDriverWait(TestBase.driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.elementToBeClickable(ele));
     }
     public static void checkIfElementIsVisible(WebElement ele) {
-        WebDriverWait wait = new WebDriverWait(TestBase.driver, 5);
+        WebDriverWait wait = new WebDriverWait(TestBase.driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOf(ele));
     }
 }
